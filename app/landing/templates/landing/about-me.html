@@ -1,0 +1,47 @@
+{% extends 'landing/base.html' %}
+
+{% block title %}About Us{% endblock title %}
+
+{% block background %}
+    {% load static %}
+    {% static 'landing/img/proyecta-comunica.jpg' %}
+{% endblock background %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock headers %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Misión</h5>
+        <p class="card-text">Promover el aprendizaje y la aplicación de las buenas prácticas en gestión de proyectos bajo el enfoque del PMI entre los estudiantes de la UNI contribuyendo a su formación personal y profesional.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/avatar.jpg' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Quiénes Somos</h5>
+        <p class="card-text">Somos la organización estudiantil líder y pionera en la aplicación y promoción de buenas prácticas en gerencia de proyectos bajo el estándar del PMI.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Visión</h5>        
+        <p class="card-text">       
+        Ser la Sección Estudiantil líder en la promoción y aplicación de las buenas prácticas en gestión de proyectos, contando con el mejor programa de capacitación.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>  
+
+{% endblock content %}
