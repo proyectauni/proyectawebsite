@@ -16,7 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.landing import views as landing_views
-from app.home import views as home_views
 
 urlpatterns = [
     path('', landing_views.home, name="home"),
