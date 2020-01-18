@@ -11,3 +11,63 @@
 <h1>Proyecta UNI</h1>
 <span class="subheading">Aprender para enseñar</span>
 {% endblock headers %}
+
+
+{% block content %}
+
+<h2>Junta Directiva</h2>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/directiva4.jpeg' %}" alt="First slide">
+      </center>     
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/directiva1.jpeg' %}" alt="Second slide">
+      </center>        
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/directiva2.jpeg' %}" alt="Third slide">
+      </center>      
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/directiva3.jpeg' %}" alt="Third slide">
+      </center>      
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/directiva5.jpeg' %}" alt="Third slide">
+      </center>      
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/directiva6.jpeg' %}" alt="Third slide">
+      </center>      
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/directiva7.jpeg' %}" alt="Third slide">
+      </center>      
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+{% block aliados %}
+<div class="overlay" style="background-color:#3f95eb;">
+    <h2 style="text-align: center; color:white;">Aliados</h2>
+    <center>
+        <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/ceps2.png' %}" alt="Third slide">
+        <img class="col-3" style="width:15%; height:30%" src="{% load static %} {% static 'landing/img/uni.png' %}" alt="Third slide">
+        <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/ctic2.png' %}" alt="Third slide">
+        <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/startup.png' %}" alt="Third slide">
+    </center>
+    <br>
+</div>
+{% endblock aliados %} 
