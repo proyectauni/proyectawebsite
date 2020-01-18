@@ -63,10 +63,16 @@
 <div class="overlay" style="background-color:#3f95eb;">
     <h2 style="text-align: center; color:white;">Aliados</h2>
     <center>
+    
+        {% comment %}
         <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/ceps2.png' %}" alt="Third slide">
         <img class="col-3" style="width:15%; height:30%" src="{% load static %} {% static 'landing/img/uni.png' %}" alt="Third slide">
         <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/ctic2.png' %}" alt="Third slide">
         <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/startup.png' %}" alt="Third slide">
+        {% endcomment %}
+        {% for sponsors in all_sponsors %}
+        <img class="col-3" style="width:24%;" src="{{ sponsors.imagen.url }}" alt="Third slide">
+        {% endfor %}
     </center>
     <br>
 </div>
