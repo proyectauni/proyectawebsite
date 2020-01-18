@@ -65,7 +65,9 @@
     <!-- Contenido -->
     <div class="container">
         {% block content %}{% endblock content %}
-    </div>    
+    </div>
+
+    {% block aliados %}{% endblock aliados %}    
 
     {% if request.path != "/" %}<hr>{% endif %}
 
