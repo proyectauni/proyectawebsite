@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'app.proyecto',
     'app.proyectino',
     'app.landing',
-    'django.contrib.sites',
-    'django.contrib.account'
+    'django.contrib.sites'
 ]
 
 MIDDLEWARE = [
