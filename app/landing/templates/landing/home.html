@@ -57,6 +57,47 @@
   </div>
 </div>
 
+<br>    
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Misión</h5>
+        <p class="card-text">Promover el aprendizaje y la aplicación de las buenas prácticas en gestión de proyectos bajo el enfoque del PMI entre los estudiantes de la UNI contribuyendo a su formación personal y profesional.</p>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Quiénes Somos</h5>
+        <p class="card-text">Somos la organización estudiantil líder y pionera en la aplicación y promoción de buenas prácticas en gerencia de proyectos bajo el estándar del PMI.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Visión</h5>        
+        <p class="card-text">       
+        Ser la Sección Estudiantil líder en la promoción y aplicación de las buenas prácticas en gestión de proyectos, contando con el mejor programa de capacitación.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="card bg-dark text-black">
+  <img class="card-img" style="width:100%;height:300px" src=" {% load static %} {% static 'landing/img/manos proyecto.jpg' %}" alt="Card image">
+  <div class="card-img-overlay">
+    <h5 class="card-title">REVISTA INSTITUCIONAL</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <a href="https://bit.ly/2V1DQyp" target="_blank"><button type="button" class="btn btn-success" style="margin:auto;display:block">Revista Proyecta Uni</button></a>
+  </div>
+</div>
+<br>
+
 {% endblock content %}
 
 {% block aliados %}
@@ -75,5 +116,31 @@
         {% endfor %}
     </center>
     <br>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-sm-6">
+  <p>Contáctanos</p>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nombre Completo</label>
+        <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+        
+        <label for="exampleFormControlInput1">Correo Electrónico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        
+        <label for="exampleFormControlTextarea1">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin:auto;display:block">Enviar</button>
+    </form>
+  </div>
+
+  <div class="col-sm-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15609.263622759609!2d-77.0493591!3d-12.0217592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b150e20d07bd6ba!2sProyecta%20UNI!5e0!3m2!1ses!2spe!4v1579927707165!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>	
+	
 </div>
 {% endblock aliados %} 
