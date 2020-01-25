@@ -7,6 +7,9 @@ class Especialidad(models.Model):
     nombre_facu = models.CharField(max_length=75, help_text="aquí irá el nombre completo de la facultad y no de forma abreviada")
     abreviaura = models.CharField(max_length=10, help_text="aquí irá las siglas de la facu")
 
+    def __str__(self):
+        return self.nombre_esp
+
 class Proyectino(models.Model):
     name = models.CharField(max_length=75)
     lastname = models.CharField(max_length=75)
@@ -19,14 +22,32 @@ class Proyectino(models.Model):
     cod_uni = models.CharField(max_length=10, help_text="este será el código de la uni de cada estudiante")
     estado = models.CharField(help_text="indica el estado activo/inactivo/honoraio.. de un miembro",max_length=75)
     cantidad_toribonus = models.IntegerField()
+    avatar = models.ImageField(blank=True, null=True)
+
+    def __str__(self):
+        return self.dni
+
+class Directiva(models.Model):
+    gerente = models.ForeignKey(Proyectino,on_delete=models.CASCADE,)
+    cargo = models.CharField(max_length=25)
+    periodo = models.IntegerField()
+    avatar_landing = models.ImageField(blank=True, null=True)
+
+
 
 class Certificacion_proyectino(models.Model):
     proyectino = models.ForeignKey(Proyectino, on_delete=models.CASCADE)
     nombre = models.CharField(max_length=75)
     fecha_certificación = models.CharField(max_length=75)
 
+    def __str__(self):
+        return self.proyectino
+
 class Tipo_toribonu(models.Model):
     descripcion = models.CharField(max_length = 75)
+
+    def __str__(self):
+        return self.descripcion
 
 class Toribonu(models.Model):
     emisor = models.CharField(max_length=75, help_text="nombre de la persona que está asignando los toribonus")
@@ -34,3 +55,6 @@ class Toribonu(models.Model):
     tipo_toribonu = models.ForeignKey(Tipo_toribonu, on_delete=models.CASCADE)
     descripcion = models.CharField(max_length=75)
     cantidad = models.IntegerField()
+
+    def __str__(self):
+        return self.proyectino

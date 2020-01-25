@@ -16,3 +16,11 @@ def about(request):
 
 def contacto(request):
     return render(request, "landing/contactame.html")
+
+def directiva(request):
+
+    all_sponsors = Sponsor.objects.filter(estado = True)
+
+    print (all_sponsors[0])
+
+    return render(request, "landing/directiva.html",{'all_sponsors' : all_sponsors})
