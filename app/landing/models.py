@@ -18,4 +18,17 @@ class Revista(models.Model):
     def __str__(self):
         return self.year
 
+class Message(models.Model):
+    date_register = models.DateTimeField(auto_now=True, blank=True)
+    user_name = models.CharField(max_length=40)
+    email = models.EmailField(blank=True, null=True)
+    message = models.CharField(max_length=200)
+    phone = models.CharField(max_length=20, default="")
+
+    class Meta:
+        ordering = ('pk',)
+
+    def __str__(self):
+        return str(self.pk)
+
 
