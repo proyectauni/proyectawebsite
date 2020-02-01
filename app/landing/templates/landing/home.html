@@ -4,12 +4,13 @@
 
 {% block background %}
     {% load static %}
-    {% static 'landing/img/Portada.png' %}
+    {% static 'landing/img/Background Image.png' %}
 {% endblock background %}
 
 {% block headers %}
-<h1>Proyecta UNI</h1>
-<span class="subheading">Aprender para enseñar</span>
+<br>
+<br>
+<br>
 {% endblock headers %}
 
 
@@ -122,19 +123,21 @@
 
 <br>
 
-<div class="row">
+<div class="container">
+  <div class="row">
   <div class="col-sm-6">
   <p>Contáctanos</p>
-    <form>
+    <form method="POST" action="{% url 'correo' %}">
+      {% csrf_token %}
       <div class="form-group">
         <label for="exampleFormControlInput1">Nombre Completo</label>
-        <input type="text" class="form-control" placeholder="Ingresa tu nombre">
+        <input type="text" class="form-control" placeholder="Ingresa tu nombre" name="nombre">
         
         <label for="exampleFormControlInput1">Correo Electrónico</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="correo">
         
         <label for="exampleFormControlTextarea1">Mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="contenido"></textarea>
       </div>
       <button type="submit" class="btn btn-primary" style="margin:auto;display:block">Enviar</button>
     </form>
@@ -144,5 +147,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15609.263622759609!2d-77.0493591!3d-12.0217592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b150e20d07bd6ba!2sProyecta%20UNI!5e0!3m2!1ses!2spe!4v1579927707165!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </div>	
 	
+  </div>
 </div>
+
 {% endblock aliados %} 
