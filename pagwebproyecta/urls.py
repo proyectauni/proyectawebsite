@@ -29,6 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Paths de Auth (para la autenticación)
     path('accounts/', include('django.contrib.auth.urls')),
+    path('correoproyecta/', landing_views.sendMail, name="correo")
 ]
 
 urlpatterns += staticfiles_urlpatterns()

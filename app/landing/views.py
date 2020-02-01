@@ -24,3 +24,13 @@ def directiva(request):
     print (all_sponsors[0])
 
     return render(request, "landing/directiva.html",{'all_sponsors' : all_sponsors})
+
+def sendMail(request):
+    if request.method is "GET":
+        all_sponsors = Sponsor.objects.filter(estado = True)
+        return render(request, "landing/home.html",{'all_sponsors' : all_sponsors})
+
+    else:
+        print(request.body)
+        return render(request, "landing/contactame.html")
+
