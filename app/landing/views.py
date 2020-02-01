@@ -16,6 +16,8 @@ def about(request):
 
 def contacto(request):
     return render(request, "landing/contactame.html")
+def index(request):
+    return render(request, "landing/index.html")
 
 def directiva(request):
 
