@@ -1,10 +1,10 @@
 {% extends 'landing/base.html' %}
 
-{% block title %}Home{% endblock title %}
+{% block title %}Directiva{% endblock title %}
 
 {% block background %}
     {% load static %}
-    {% static 'landing/img/Portada.png' %}
+    {% static 'landing/img/PortadaDirectiva.jpe' %}
 {% endblock background %}
 
 {% block headers %}
@@ -48,114 +48,97 @@
   </div>
 </div>
 
+<style>
+  @media (min-width: 768px) {
+    .site-heading { padding: 100px 0px !important; }
+  }
+  .w-50 { width: 70% !important; }
+  .avatar { border-radius: 10%; }
+</style>
 {% endblock headers %}
 
 
 {% block content %}
 
-<h2>Junta Directiva</h2>
+<div class="inner">
+    <header>
+        <h2>Directivas:</h2>
+    </header>
 
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h4 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              2019
+            </button>
+          </h4>
+        </div>
 
-<br>    
-<div class="row">
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Misión</h5>
-        <p class="card-text">Promover el aprendizaje y la aplicación de las buenas prácticas en gestión de proyectos bajo el enfoque del PMI entre los estudiantes de la UNI contribuyendo a su formación personal y profesional.</p>        
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <table class="table table-hover">
+              <tbody>
+                <tr>
+                  <td>Presidente:</td>
+                  <td>Gerardo Jesus Ignacio Villacorta</td>
+                </tr>
+                <tr>
+                  <td>Primer Vicepresidente:</td>
+                  <td>Sammy Gabriel Sarmineto Alarcón</td>
+                </tr>
+                <tr>
+                  <td>Segundo Vicepresidente:</td>
+                  <td>Franklin Vasquez Capcha</td>
+                </tr>
+                <tr>
+                  <td>Directora de Marketing:</td>
+                  <td>Donnalyn Francesca Melgar Grijalba</td>
+                </tr>
+                <tr>
+                  <td>Director de Talento Humano:</td>
+                  <td>Italo Espinoza Radenovich</td>
+                </tr>
+                <tr>
+                  <td>Director de Logistica:</td>
+                  <td>Gerson Michael Cuya Huarajo</td>
+                </tr>
+                <tr>
+                  <td>Director PMO:</td>
+                  <td>Brayan Anderso Huaccharaqui Barrientos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Quiénes Somos</h5>
-        <p class="card-text">Somos la organización estudiantil líder y pionera en la aplicación y promoción de buenas prácticas en gerencia de proyectos bajo el estándar del PMI.</p>
+
+      <!--<div class="card">
+        <div class="card-header" id="headingTwo">
+          <h4 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2018
+            </button>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            <p>Presidente:</p>
+            <p>Vicepresidente:</p>
+            <p>PMO:</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Visión</h5>        
-        <p class="card-text">       
-        Ser la Sección Estudiantil líder en la promoción y aplicación de las buenas prácticas en gestión de proyectos, contando con el mejor programa de capacitación.
-        </p>
-      </div>
-    </div>
-  </div>
+    </div>-->
+
 </div>
 <br>
 
-<div class="card bg-dark text-white">
-  <img class="card-img" style="width:100%;height:300px" src=" {% load static %} {% static 'landing/img/avatar.jpg' %}" alt="Card image">
-  <div class="card-img-overlay">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <button type="button" class="btn btn-success" style="margin:auto;display:block">Revista Proyecta Uni</button>
-  </div>
-</div>
-<br>
+<style>
+  .btn { font-size: 20px; padding: 0px; }
+</style>
 
 {% endblock content %}
 
 {% block aliados %}
-<div class="overlay" style="background-color:#3f95eb;">
-    <h2 style="text-align: center; color:white;">Aliados</h2>
-    <center>
-    
-        {% comment %}
-        <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/ceps2.png' %}" alt="Third slide">
-        <img class="col-3" style="width:15%; height:30%" src="{% load static %} {% static 'landing/img/uni.png' %}" alt="Third slide">
-        <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/ctic2.png' %}" alt="Third slide">
-        <img class="col-3" style="width:24%;" src="{% load static %} {% static 'landing/img/startup.png' %}" alt="Third slide">
-        {% endcomment %}
-        {% for sponsors in all_sponsors %}
-        <img class="col-3" style="width:24%;" src="{{ sponsors.imagen.url }}" alt="Third slide">
-        {% endfor %}
-    </center>
-    <br>
-</div>
-
-<br>
-
-<div class="row">
-  <div class="col-sm-6">
-    <form class="col-sm-6">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Example select</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlSelect2">Example multiple select</label>
-        <select multiple class="form-control" id="exampleFormControlSelect2">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-    </form>
-  </div>
-
-  <div class="col-sm-6">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15609.263622759609!2d-77.0493591!3d-12.0217592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b150e20d07bd6ba!2sProyecta%20UNI!5e0!3m2!1ses!2spe!4v1579927707165!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  </div>	
-	
-</div>
-{% endblock aliados %} 
+{% endblock aliados %}
