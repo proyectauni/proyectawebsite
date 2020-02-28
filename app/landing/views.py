@@ -53,3 +53,9 @@ def sendMail(request):
         # print(request.body)
         # return render(request, "landing/contactame.html")
 
+def proyectos(request):
+    
+    return render(request, "landing/proyectos.html")
+
+    
+
