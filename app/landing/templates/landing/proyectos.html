@@ -1,0 +1,262 @@
+{% extends 'landing/base.html' %}
+
+{% block title %}Directiva{% endblock title %}
+
+{% block background %}
+    {% load static %}
+    {% static 'landing/img/PortadaProyectos.jpg' %}
+{% endblock background %}
+
+{% block headers %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/proyecto-convocatoria.jpg' %}" alt="First slide">
+      </center>
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/proyecto-npt2018.jpg' %}" alt="Second slide">
+      </center>
+    </div>
+    <div class="carousel-item">
+      <center>
+        <img class="d-block img-fluid avatar w-50" src="{% load static %} {% static 'landing/img/proyecto-proyectaenaccion.JPG' %}" alt="Third slide">
+      </center>
+    </div>
+  </div>
+</div>
+
+<style>
+  @media (min-width: 768px) {
+    .site-heading { padding: 100px 0px !important; }
+  }
+  .w-50 { width: 100% !important; }
+  .avatar { border-radius: 10%; }
+</style>
+{% endblock headers %}
+
+{% block content %}
+
+<div class="inner">
+  <header>
+    <h2>Proyectos de Difución:</h2>
+  </header>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Programa Vivencial de Gestión de Proyectos- KUSKA</h5>
+        <p class="card-text">Programa vivencial que difunde las buenas prácticas de gestión de proyectos, mediante talleres prácticos con el apoyo de 
+facilitadores voluntarios con gran experiencia y conocimientos en Gestión de Proyectos; basándose en diferentes estándares a 
+nivel mundial como PMI, IPMA y Ágile. Desde su creación hasta la actualidad, Kuska ha difundido el aprendizaje en gestion 
+de proyectos a nivel interuniversitario y nacional, dirigiéndose a universidades de Lima y provincias.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/kuska.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Curso Integral de Gerencia de Proyectos</h5>
+        <p class="card-text">Proyecto que busca difundir la gestión de proyectos mediante un curso en dicha rama con ponentes o profesores certificados y con gran trayectoria en el mundo de la gestión, siendo este tipo de proyectos uno de los que genera ingreso a la sección para ser retribuido al resto de proyectos y darle continuidad a la sección, recordando que la sección estudiantil es una organización sin fines de lucro.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/cigp.jpg' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Programa de capacitación en Gestión de Proyectos</h5>
+        <p class="card-text">Proyecto que busca capacitar a la comunidad UNI de manera gratuita, teniendo como ente capacitador a Kuska, dirigiéndose a todas las agrupaciones de la UNI, especialmente a los grupos de la Facultad de Ingeniería Civil para afianzar los lazos de confraternidad entre ProyectaUNI y las agrupaciones estudiantiles de la UNI.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/pgp.png  ' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Full Day en Gestión de Proyectos</h5>        
+        <p class="card-text">       
+        Proyecto que busca difundir la gestión de proyectos en todo un día lleno de conferencias y capacitaciones al público en general; todo ello aplicando las buenas practicas, siendo este otro proyecto en el cual genera ingresos sin fines lucrativos a la sección estudiantil ProyectaUNI.
+        </p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/fullday.png  ' %}" alt="">
+      </div>
+    </div>
+  </div>
+</div>  
+
+<br>
+
+<div class="inner">
+  <header>
+    <h2>Proyectos Sociales:</h2>
+  </header>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Navidad Para Todos</h5>
+        <p class="card-text">-	Proyecto social que busca brindarles un día lleno de alegría y felicidad a los niños de un colegio nivel primario previo a las fiestas navideñas, dicho colegio es elegido por bajos recursos que presenta; aplicando las buenas prácticas en gestión de proyectos.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/navidad-para-todos.jpg' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">PeruaUNI</h5>
+        <p class="card-text">Concurso interuniversitario que busca generar un espacio donde jóvenes líderes difundan y revaloricen su cultura a través de 
+innovadoras actividades y proyectos sociales enfocados en el desarrollo de las diversas regiones del Perú, generando un 
+espacio de encuentro para jóvenes estudiantes universitarios provenientes de diversas partes del país que tengan ánimos de 
+compartir su cultura de origen y de proponer proyectos que fomenten la difusión de esta.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/peruauni.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Participa en el Cambio</h5>
+        <p class="card-text">-	Proyecto social que busca desarrollar y potenciar a una comunidad de bajos recursos mediante talleres y trabajos comunitarios en conjunto con la comunidad aplicando las buenas prácticas en gestión de proyectos.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/pec.jpg' %}" alt="">
+      </div>
+    </div>
+  </div>
+</div>  
+
+<br>
+
+<div class="inner">
+  <header>
+    <h2>Proyectos de Innovación:</h2>
+  </header>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Premio Proyecta UNI</h5>
+        <p class="card-text">Este proyecto provee la oportunidad a estudiantes de la UNI de capacitarse con las principales herramientas de gestión de 
+proyectos que los ayuden a plasmar una idea de investigación en un proyecto de investigación. Los proyectos de investigación 
+concursan y se presentan en una expo feria abierta al público dentro de la UNI, así se revalora la investigación dentro de la
+universidad, y los estudiantes pueden mostrar y difundir su proyecto para conseguir apoyo y/o financiamiento.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/ppuni.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">PMP – Programa de Mentoría ProyectaUNI</h5>
+        <p class="card-text">Programa de Mentoría conformado por 3 procesos de mentoría: P1MP (dirigido a los nuevos miembros provenientes de la etapa 
+de convocatoria con el fin de formar buenos equipos de proyectos), P2MP (dirigido a miembros de la organización que han pasado 
+por el P1MP con el fin de formar buenos Gerentes de Proyectos) y P3MP (dirigido a miembros de la organización que han pasado 
+por el P1MP y P2MP con el fin de formar una buena base de miembros experimentados a exportar como parte de la bolsa de trabajo 
+de ProyectaUNI).</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/pmp.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+</div>  
+
+<br>
+
+<div class="inner">
+  <header>
+    <h2>Proyectos Institucionales:</h2>
+  </header>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">DP's Trainig</h5>
+        <p class="card-text">Programa de capacitación gerencial interna hacia miembros de ProyectaUNI mediante Talleres de Habilidades Blandas, Talleres
+ Motivacionales en Dirección de Proyectos y un encuentro gerencial denominado ProyectaUNI Meet Up; donde el proyectino podrá 
+desarrollar y potenciar sus habilidades directivas y conocimiento empírico en gestion de proyectos, con el fin de formar a futuros 
+Gerentes de Proyectos en la organización.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/dpstraining.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Proyecta en Acción</h5>
+        <p class="card-text">Evento interno de integración en el cual se busca difundir e identificar al proyectino con la marca Proyecta UNI a nivel UNI 
+y exteriores, mediante entrega de merchandasing, polos, bolsos y folders de ProyectaUNI; así como también fotografías a cada 
+proyectino, Gerente de Proyecto, Directiva y Miembro Honorario, resaltando la imagen o fotografía institucional de la organización.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/proyectaenaccion.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Proyecta Meetup UNI</h5>
+        <p class="card-text">Taller de vivencias gerenciales, rama de DP’s training, en el cual los past Directores de Proyectos compartirán sus lecciones 
+aprendidas, riesgos mapeados, presupuesto histórico, acontecimientos importantes, logros, etc. A los miembros actuales de la 
+organización que desean asumir la gerencia de algún proyecto mas adelante.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/proyectameetup.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Proyecta Tu Proyecto 2019 - Presentación de Proyectos</h5>
+        <p class="card-text">Concurso de Proyectos que serán propuestos para su inclusión en el portafolio anual de la organización, encuentro que tendrá 
+como jurados al Sponsor y miembros honorarios de la organización; calificando a estos proyectos en base al Plan Estratégico 
+de la organización y al Plan de Dirección de proyectos propuesto por cada equipo de proyecto participante, cabe resaltar 
+que estos son miembros de la organización.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/ptp.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Oplimpiadas Proyecta UNI 2019</h5>
+        <p class="card-text">Evento deportivo interno de integración, donde participaran los equipos de proyectos actuales de la organización en distintas
+ disciplinas como: futbol masculino y femenino, básquet mixto y vóley mixto; así como también una gymkana de clausura para 
+finalizar con la entrega de los premios a los equipos ganadores en la puntuación general.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/olimpiadas.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="inner">
+  <header>
+    <h2>Proyectos Bilaterales:</h2>
+  </header>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">IBMC – Competición Internacional de Modelos de Negocio</h5>
+        <p class="card-text">Concurso internacional de modelos de negocios dirigidos a estudiantes de la comunidad UNI, proyecto en el cual se realiza en 
+coordinación entre ProectaUNI y StartUp UNI; clasificando los ganadores a el IBMC a nivel mundial, con grandes premios y de 
+gala internacional.</p>
+        <img class="img-fluid avatar" src=" {% load static %} {% static 'landing/img/ibmc.png' %}" alt="">
+      </div>
+    </div>
+  </div>
+</div>  
+{% endblock content %}
