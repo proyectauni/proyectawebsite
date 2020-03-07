@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import *
+from .models import Sponsor, Revista, Message
 
-# class SponsorAdmin(admin.ModelAdmin):
-#     list_display = ('id', 'image', 'nombre', 'estado')
-#     ordering = ('id', )
-#     search_fields = ('nombre', 'estado',)
+class SponsorAdmin(admin.ModelAdmin):
+     list_display = ('id', 'imagen', 'nombre', 'estado')
+     ordering = ('id', )
+     search_fields = ('nombre', 'estado',)
 
 class RevistaAdmin(admin.ModelAdmin):
     list_display = ('id', 'year', 'link', 'estado')
@@ -19,6 +19,6 @@ class MessageAdmin(admin.ModelAdmin):
 
 
 # Register your models here.
-admin.site.register(Sponsor)
+admin.site.register(Sponsor, SponsorAdmin)
 admin.site.register(Revista, RevistaAdmin)
 admin.site.register(Message, MessageAdmin)

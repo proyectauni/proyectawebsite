@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
 from django.core.mail import send_mail
 #importar modelos
-from .models import *
+from .models import Sponsor, Revista, Message
 
 # Create your views here.
 def home(request):

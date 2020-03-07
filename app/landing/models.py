@@ -8,7 +8,7 @@ class Sponsor(models.Model):
     estado = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.nombre + ' || ' + str(self.estado)
+        return self.nombre
 
 class Revista(models.Model):
     year = models.CharField(max_length=75)
